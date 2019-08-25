@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav Bar</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 1rem;
+		}
+		.container{
+			background-color: #fff;
+		}
+		nav{
+			width: 40vw;
+			max-width: 245px;
+			height: auto;
+			background-color: #222;
+		}
+		ul{
+			padding: 1em;
+			margin: 0 auto;
+		}
+		a{
+			padding: 10px 0;
+			display: flex;
+			color: #eee;
+			text-decoration: none;
+		}
+		li{
+			list-style: none;
+			margin-bottom: 0.5em auto;
+			border-bottom: 1px solid #999;
+		}
+		li:last-of-type{
+			margin-bottom: 0;
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+		img{
+			max-width: 100%;
+			width: 50px;
+			height: 50px;
+		}
+		p{
+			padding-left: 0;
+			font-weight: bold;
+			display: none;
+		}
+		a:hover{
+			transition: 0.3s ease-in-out;
+		}
+		a:hover > img{
+			animation: spin 1s;
+		}
+		a:hover > p{
+			display: inline-block;
+		}
+
+		@media screen and (min-width: 400px) {
+			p{
+				padding-left: .5em;
+				transform: scale(1.1);
+			}
+
+		}
+
+		@media screen and (min-width: 500px) {
+			p{
+				padding-left: 1em;
+				transform: scale(1.1);
+			}
+
+		}
+
+		@media screen and (min-width: 600px) {
+			p{
+				padding-left: 2em;
+				transform: scale(1.1);
+			}
+
+		}
+
+		@keyframes spin{
+			from{
+				transform: rotate(0deg) scale(1.1);
+			}
+			to{
+				transform: rotate(360deg) scale(1);
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<h2>Do Follow Us on</h2>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href=""><img src="C:\xampp\htdocs\project\img\fb.png"><p>Facebook</p></a></li>
+				<li><a href=""><img src="C:\xampp\htdocs\project\img\google.png"><p>Google</p></a></li>
+				<li><a href=""><img src="C:\xampp\htdocs\project\img\insta.png"><p>Instagram</p></a></li>
+				<li><a href=""><img src="C:\xampp\htdocs\project\img\twitter.png"><p>Twitter</p></a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>
